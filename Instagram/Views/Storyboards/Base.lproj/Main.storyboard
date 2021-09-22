@@ -131,7 +131,7 @@
         <scene sceneID="VLS-dB-wFW">
             <objects>
                 <navigationController id="nfd-3J-LXs" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="globe" catalog="system" id="9zG-dm-Ual"/>
+                    <tabBarItem key="tabBarItem" title="" image="magnifyingglass" catalog="system" id="9zG-dm-Ual"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SkK-rH-qhf">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -165,7 +165,7 @@
         <scene sceneID="wNg-OG-x92">
             <objects>
                 <navigationController id="ilP-M6-gxJ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="bell" catalog="system" id="xXc-GD-Tsg"/>
+                    <tabBarItem key="tabBarItem" title="" image="heart" catalog="system" id="xXc-GD-Tsg"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PEt-r4-4F6">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -197,9 +197,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bell" catalog="system" width="128" height="124"/>
-        <image name="globe" catalog="system" width="128" height="121"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
         <image name="house" catalog="system" width="128" height="106"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="labelColor">

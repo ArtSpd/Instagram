@@ -10,12 +10,29 @@ import FirebaseStorage
 public class StorageManager{
     static let shared = StorageManager()
     
+    private let bucket = Storage.storage().reference()
+    
+    public enum StoregeManagerError: Error {
+        case failedToDownload
+    }
+    
     //MARK: - Public
-    public func regusterNewUser(userName: String, email: String, password: String){
+    public func uploadUserPhotoPost(model: UserPost, complition: (Result<URL, Error>) -> Void) {
         
     }
     
-    public func loginUser(userName: String?, email: String?, password: String){
-        
+    public func downloadImage(with reference: String, complition: @escaping (Result<URL, StoregeManagerError>) -> Void){
+        bucket.child(reference).downloadURL { url, error in
+            guard let url = url, error == nil else {
+                complition(.failure(.failedToDownload))
+                return
+            }
+            
+            complition(.success(url))
+            
+        }
     }
+    
+
+    
 }

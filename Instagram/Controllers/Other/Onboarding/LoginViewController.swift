@@ -187,10 +187,12 @@ class LoginViewController: UIViewController {
         if usernameEmail.contains("@"), usernameEmail.contains("."){
             //email
             email = usernameEmail
+            userName = usernameEmail
             
         } else {
             //username
             userName = usernameEmail
+            email = usernameEmail
         }
         
         AuthManager.shared.loginUser(userName: userName, email: email, password: password) { success in

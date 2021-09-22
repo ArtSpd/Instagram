@@ -6,6 +6,7 @@ target 'Instagram' do
   use_frameworks!
 
 pod 'Appirater'
+pod 'SDWebImage'
 
 
   #Firebase

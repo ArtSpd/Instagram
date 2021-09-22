@@ -121,7 +121,8 @@ class RegistrationViewController: UIViewController {
         AuthManager.shared.regusterNewUser(userName: username, email: email, password: password) { registered in
             DispatchQueue.main.async {
                 if registered{
-                    
+                    self.dismiss(animated: true)
+
                 } else {
                     
                 }
