@@ -7,8 +7,9 @@
 
 import UIKit
 
-public enum UserPostType {
-    case photo, video
+public enum UserPostType: String {
+    case photo = "Photo"
+    case video = "Video"
 }
 
 public struct UserPost {
@@ -18,9 +19,10 @@ public struct UserPost {
     let postURL: URL
     let caption: String?
     let likeCount: [PostLike]
-    let comments: [CommentLike]
+    let comments: [PostComment]
     let postedDate: Date
     let taggedUsers: [String]
+    let owner: User
 }
 
 enum Gender {
@@ -40,9 +42,10 @@ public struct User{
     let gender: Gender
     let counts: UserCount
     let joinDate: Date
+    let profilePhoto: URL
 }
 
-struct CommentLike {
+struct PostComment {
     let userName: String
     let commentIdentifier: String
 }
@@ -52,5 +55,5 @@ struct PostLike {
     let userName: String
     let text: String
     let createdDate: Date
-    let postlike: [CommentLike]
+    let postlike: [PostComment]
 }

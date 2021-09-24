@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C215262726FB726B00272A15 /* UserFollowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C215262626FB726B00272A15 /* UserFollowTableViewCell.swift */; };
+		C237808226FCA757005463D8 /* NotificationFollowInventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C237808126FCA757005463D8 /* NotificationFollowInventTableViewCell.swift */; };
+		C237808526FCA764005463D8 /* NotofocationLikeIventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C237808426FCA764005463D8 /* NotofocationLikeIventTableViewCell.swift */; };
 		C246DD2B26FA0BF7002D382F /* FormTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C246DD2A26FA0BF7002D382F /* FormTableViewCell.swift */; };
 		C246DD2F26FA1502002D382F /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C246DD2E26FA1502002D382F /* PhotoCollectionViewCell.swift */; };
 		C246DD3326FA1585002D382F /* ProfileInfoHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C246DD3226FA1585002D382F /* ProfileInfoHeaderCollectionReusableView.swift */; };
@@ -50,6 +52,8 @@
 		5E9FC0301418084C889BE415 /* Pods-Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.debug.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.debug.xcconfig"; sourceTree = "<group>"; };
 		955E69FFF2C66C8632B132E6 /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C215262626FB726B00272A15 /* UserFollowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFollowTableViewCell.swift; sourceTree = "<group>"; };
+		C237808126FCA757005463D8 /* NotificationFollowInventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationFollowInventTableViewCell.swift; sourceTree = "<group>"; };
+		C237808426FCA764005463D8 /* NotofocationLikeIventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotofocationLikeIventTableViewCell.swift; sourceTree = "<group>"; };
 		C246DD2A26FA0BF7002D382F /* FormTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableViewCell.swift; sourceTree = "<group>"; };
 		C246DD2E26FA1502002D382F /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		C246DD3226FA1585002D382F /* ProfileInfoHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
@@ -119,6 +123,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		C237808026FCA733005463D8 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				C237808126FCA757005463D8 /* NotificationFollowInventTableViewCell.swift */,
+				C237808426FCA764005463D8 /* NotofocationLikeIventTableViewCell.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
 		C246DD3126FA153C002D382F /* Collection View Headers */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +144,7 @@
 		C2627C5426F8CA670035641C /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				C237808026FCA733005463D8 /* Notification */,
 				C2627C5926F8CC5F0035641C /* HomeFeed */,
 				C246DD2A26FA0BF7002D382F /* FormTableViewCell.swift */,
 				C246DD2E26FA1502002D382F /* PhotoCollectionViewCell.swift */,
@@ -396,8 +410,10 @@
 				C2C8DA6D26F79598006A958C /* CameraViewController.swift in Sources */,
 				C2C8DA9926F79742006A958C /* PublishPostViewController.swift in Sources */,
 				C2C8DA5326F79450006A958C /* HomeViewController.swift in Sources */,
+				C237808526FCA764005463D8 /* NotofocationLikeIventTableViewCell.swift in Sources */,
 				C2C8DA7426F795B7006A958C /* NotificationViewController.swift in Sources */,
 				C2C8DA8126F7963A006A958C /* RegistrationViewController.swift in Sources */,
+				C237808226FCA757005463D8 /* NotificationFollowInventTableViewCell.swift in Sources */,
 				C2731EBD26FBCE5700312778 /* NoNotificationsView.swift in Sources */,
 				C2C8DA9626F79733006A958C /* PostEditorViewController.swift in Sources */,
 				C2A9855226F7B1CE004C1A8D /* StorageManager.swift in Sources */,
