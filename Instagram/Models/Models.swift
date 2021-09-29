@@ -45,15 +45,15 @@ public struct User{
     let profilePhoto: URL
 }
 
-struct PostComment {
+struct PostLike {
     let userName: String
     let commentIdentifier: String
 }
 
-struct PostLike {
+struct PostComment {
     let identifier: String
     let userName: String
     let text: String
     let createdDate: Date
-    let postlike: [PostComment]
+    let postlike: [PostLike]
 }

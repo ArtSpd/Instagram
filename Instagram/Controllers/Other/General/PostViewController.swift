@@ -35,7 +35,7 @@ class PostViewController: UIViewController {
         return tableView
     }()
     
-    init(model: UserPost){
+    init(model: UserPost  ){
         self.model = model
         super.init(nibName:  nil, bundle: nil)
         configureModels()
@@ -55,7 +55,7 @@ class PostViewController: UIViewController {
         //Comments
         var comments = [PostComment]()
         for comment in 0..<4{
-            comments.append(PostComment(userName: "ARtic", commentIdentifier: "HI"))
+            comments.append(PostComment(identifier: "123", userName: "Antony", text: "Hi everyone", createdDate: Date.init(), postlike: [PostLike(userName: "Joe", commentIdentifier: "Cool")]))
         }
         renderModels.append(PostRenderViewModel(renderType: .comments(comments: comments)))
         
@@ -63,6 +63,7 @@ class PostViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Post"
         view.addSubview(tableView)
         tableView.delegate = self
         tableView.dataSource = self
